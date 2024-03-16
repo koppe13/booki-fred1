@@ -58,12 +58,25 @@ a {
     color: var(--main-bg-color)
 }
 
-.liennav {
+.liennav  {
     color: #0065FC;
-    text-align: end;
+    
+
+}
+
+.hautnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:1em;
 }
 #logo {
-    height: 50%;
+    height: 120%;
+    margin-top: 20px;
+}
+h1 {
+    margin-top: 80px;
+    font-size: 30px;
 }
 
 
