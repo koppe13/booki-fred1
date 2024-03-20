@@ -16,19 +16,76 @@
 
 <body>
     <div class="main-container">
-        <header>
-            <div class="hautnav" id="monhautnav">
-                <a href="Booki" id="logo"><img src="images/logo/Booki.png"></a>
-                <a href="bob" class="liennav">Hébergements</a>
-                <a href="bub" class="liennav">Activités</a>
-            <!--test de mise a jour-->
+    <header>
+        <nav>
+            <div class="hautnav">
+                <div>
+                    <a href="#" ><img id="logo" src="images/logo/Booki.png"></a>
+                </div>
+                <div class="liennav">
+                <a href="#heberg" class="nav1">Hébergements</a>
+                <a href="#activ" class="nav2">Activités</a>
+                <!--test ancre-->
+                </div>
             </div>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>  
-            <p>En plein centre-ville ou en pleine nature</p>
-        </header>
+        </nav>
+    </header>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>  
+        <p>En plein centre-ville ou en pleine nature</p>
+        <!--  test barre de recherche  -->
+        <div class="icon-bar">
+            <div class="barrerech">
+                <table>
+                <tr href="#"><i class="fa-solid fa-location-dot" style="color: #000000"></i>
+                    <form method="post" action="#">
+                    <label for="search-ville"></label>
+                    <input type="search" id="search-ville" placeholder="Marseille,France" size="15">
+                    <input class="validation" type="submit" value="rechercher">
+                    </form>
+                </tr> 
+                </table>
+            </div>
+        </div>
+        <!--  test filtres  -->
+        <div class="filtres">
+            <h3>Filtres</h3>
+            <div class="filtres">
+            <div class="filtre"><i class="fa-solid fa-money-bill-wave"></i><strong>Economique</strong></div>    
+            <i class="fa-solid fa-person"></i><strong><div class="filtre">Familial</div></strong>
+            <i class="fa-solid fa-heart"></i><strong><div class="filtre">Romantique</div></strong>
+            <i class="fa-solid fa-fire"></i><strong><div class="filtre">Nos pépites</div></strong>
+            </div> 
+        </div>
+        <div class="info">
+        <i class="fa-solid fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
+                    <div class="hebergements-title">
+                        <h2 class="section-title" id="heberg">Hébergements à Marseille</h2>
+                    </div>
+                    <div class="herbergements-cards">
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/fred-kleber.jpg" alt="Hôtel du port">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel du  port</h3>
+                                        <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
 
                 </section>
                 <section class="populaires">
@@ -97,6 +154,7 @@
                     </div>
                 </section>
             </div>
+            <h2 id="activ" class="section-title">Activités à Marseille</h2> 
         </main>
         <footer></footer>
     </div>
