@@ -7,6 +7,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --bordure-color:#d9d9d9;
 }
 
 .fa-solid {
@@ -65,9 +66,9 @@ a {
     height:4em;
 }
 .liennav  {
-    margin: 5px 50px 0 50px;
-        
-    }
+    margin: 5px 0 0 50px;
+}
+/********* a revoir bidon **************/
 #logo {
     height: 40%;
     margin-top: 20px;
@@ -89,18 +90,23 @@ h1 {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.submit {
-    background-color: #0065FC;
+.validation {
+    background-color: var(--main-color);
 }
 /******  filtres   **********/
 .filtres {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-   
+    gap: 15px;
+}  
+.filtre {
+    border: solid var(--bordure-color) 2px;
+    padding: 15px;
+    border-radius: 25px;
     
-}
+}    
+
 .element {
     border-style: solid;
     border: 2px;
