@@ -88,12 +88,14 @@ a {
     width: 50%;
     padding-top: 12px;
     text-align: right;
-
+}
+.titre {
+    width:120px;
+    height:80px;
 }
 #logo {
     width: 60px;
     margin-top:30px;
-    
 }
 
 h1 {
@@ -235,8 +237,6 @@ h2 {
     flex-direction: column;
     margin-top: 33px;
     }
-
-    /*** probleme de valeur pour equilibrage mobile ****/
 
 .hebergements-cards img {
     border-top-left-radius: 20px;
@@ -440,78 +440,14 @@ h4 {
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
-    /* ... */
-    .main-container{
-        padding: 0; 
-    }
-    #logo{
-        margin-left: 20px;
-    }
-    .hautnav{
-        flex-direction: column;
-        height: 115px;
-    }
-    .liennav{
-        width: 100%;
-    }
-    .nav1 {
-        width: 50%;
-        color: var(--main-color);
-        border-top: none;
-        border-bottom-style: solid ;
-        text-align: center;
-        margin-right: 0;
-        height: 36px;
-    }
-    .nav2 {
-        width: 50%;
-        padding-top: 12px;
-        text-align: center;
-        height: 36px;
-    }
-    h1  {
-       margin: 30px 20px 0 20px; 
-    }
-    p   {
-        margin: 10px 20px 0 20px; 
-    }
-    .filtres-titre{
-        margin: 0 20px 0 20px;
-    }
-    h3  {
-        margin: 0 20px 0 20px;
-        }
-    .filtres {
-        gap: 10px;
-        }
-    .filtre {
-        padding: 10px;
-        } 
-    .module {
-        width: 162.5px;
-        height: 50px;
-    }
-    .activités-cards .card2 {
-        height:300px;
-        gap: 30px;
-    }
-    .foot-liens {
-        gap: 10px;
-        margin: 10px 0 0 20px;
-    }
-    .foot-text {
-        margin-top: 20px;
-    }
-       
-}
-/* Small devices (phones, less than 375px) */
-@media (max-width: 767px) {
     .main-container{
         width: 100%;
         padding: 0; 
     }
-    #logo{
-        margin-left: 157.5px ;
+    .titre {
+        margin-left: 32%;
+        width: 35%;
+        text-align: center;
     }
     .hautnav{
         flex-direction: column;
@@ -541,11 +477,6 @@ h4 {
     p   {
         margin: 10px 20px 0 20px; 
     }
-    .bob {
-        border: 1px solid var(--main-bg-color);
-        border-radius: 15px 15px 15px 15px;
-        height: 50px;
-    }
     .barrerech {
         justify-content: center;
     }
@@ -568,16 +499,24 @@ h4 {
         display:inline;
         
     }
-
     .filtres-titre{
         width: 100%;
+        margin-left: 20px;
     }
+    
     h3  {
         margin: 0;
     }
+    .filtres {
+        gap: 10px;
+        }
     .filtre {
         padding: 10px;
     } 
+    .module {
+        width: 162.5px;
+        height: 50px;
+    }
     .info {
         gap: 10px;
         margin: 10px 0 20px 20px;
@@ -654,14 +593,13 @@ h4 {
         height: 70%;
     }
     .foot-text {
-        width: 100%;
+        margin-top: 20px;
     }
     .foot-container {
         flex-direction: column;
     }   
     .foot-liens {
         gap: 10px;
-        flex-direction: column;
         margin: 10px 0 0 0;
     }
 }
