@@ -8,7 +8,7 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
     --bordure-color:#d9d9d9;
-    
+    --bg-card-color:white;
 }
 .fa-solid {
     color: var(--main-color);
@@ -36,13 +36,13 @@ a {
 }
 
 .card {
-    background-color: white;
+    background-color: var(--bg-card-color);
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 .card2 {
-    background-color: white;
+    background-color: var(--bg-card-color);
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
@@ -149,7 +149,7 @@ h1 {
     background-color: var(--main-color);
     border: 2px solid var(--main-color);
     border-radius: 0 15px 15px 0;
-    color: white;
+    color: var(--bg-card-color);
     padding:  12px;
     font-size: 20px;
     font-weight: bold;
