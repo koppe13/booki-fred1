@@ -170,6 +170,7 @@ h1 {
     flex-wrap: wrap;
     gap: 15px;
     margin: 10px 0 10px 0;
+    width: 836px;
     
 } 
 .module :hover{
