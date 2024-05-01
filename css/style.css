@@ -210,7 +210,7 @@ h1 {
 
 /****** hebergements test ***********/
 h2 {
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 0;
     font-size: 22px;
 }
@@ -283,12 +283,15 @@ h4 {
     box-sizing: border-box;
 }
 /******** Activités **********/
+h5 {
+    font-size: 22px;
+}
 
 .Activités-rubrique {
     margin-top: 20px;
 }
 .activités {
-    padding: 30px;
+    padding: 20px 30px 30px 30px;
 }
 .activités-cards {
     display: flex;
@@ -367,7 +370,10 @@ h4 {
 .populaires-cards .card-subtitle {
     margin: 0;
 }
-
+.fa-chart-line {
+    margin-right: 30px;
+    margin-top:30px; 
+}
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
@@ -397,6 +403,7 @@ h4 {
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+        gap: 0;
     }
 
     .hebergements {
@@ -457,11 +464,8 @@ h4 {
         width: 100%;
     }
     .nav1 {
-        width: 50%;
-        color: var(--main-color);
         border-top: none;
         border-bottom-style: solid ;
-        text-align: center;
         margin-right: 0;
         height: 36px;
     }
@@ -501,7 +505,6 @@ h4 {
     }
     .filtres-titre{
         width: 100%;
-        margin-left: 20px;
     }
     
     h3  {
@@ -509,6 +512,7 @@ h4 {
     }
     .filtres {
         gap: 10px;
+        justify-content: space-evenly ;
         }
     .filtre {
         padding: 10px;
