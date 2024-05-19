@@ -74,21 +74,42 @@ a {
 .liennav {
     width: 244px;
     height: 35px;
-    display: flex;
-    
+    display: flex;    
 }
 .nav1 {
-    width: 50%;
-    color: var(--main-color);
-    border-top-style: solid ;
-    padding-top: 10px;
-    text-align: center;
-    margin-right: 60px;
+    padding-top: 20px;
+    border-top: solid 2px;
+    border-color: white;    
 }
 .nav2 {
+    padding-top: 20px;
+    text-align: center;
+    border-top: solid 2px;
+    border-color: white;
+}
+.hover1 {
     width: 50%;
-    padding-top: 12px;
-    text-align: right;
+    padding-top: 20px;
+    text-align: center;
+    margin-right: 60px;
+    border-top: solid 2px;
+    border-color: white;
+}
+.hover2 {
+    width: 50%;
+    padding-top: 20px;
+    text-align: center;
+    border-top: solid 2px;
+    border-color: white;
+
+}
+.hover1 :hover{
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+.hover2 :hover{
+        color: var(--main-color);
+        border-color: var(--main-color);
 }
 .titre {
     width:120px;
@@ -119,14 +140,7 @@ h1 {
     border-radius: 15px 15px 15px 15px;
     height: 50px;
 }
-.destination {
-    font-size: 20px;
-    height: 46px;
-    width: 200px;
-    text-align: center;
-    font-weight: bold;
-    color:black;
-}
+
 .search-term{
     border: none;
     font-size: 20px;
@@ -157,6 +171,11 @@ h1 {
     height:50px;
 }
 /******  filtres   **********/
+h2{
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
 .filtres-titre {
     display: flex;
     flex-wrap: wrap;
@@ -211,7 +230,7 @@ h1 {
 }
 
 /****** hebergements ***********/
-h2 {
+h3 {
     margin-left: 30px;
     margin-bottom: 0;
     font-size: 22px;
@@ -268,9 +287,15 @@ h2 {
     height:114px;
 }
 /******fin du test *********/
-h4 {
+.plus {
     font-size: 18px;
-    padding-left: 30px;
+    margin: 30px 0 0 30px;
+    
+}
+
+.activités h3  {
+    font-size: 22px;
+    margin-left: 0;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -285,9 +310,7 @@ h4 {
     box-sizing: border-box;
 }
 /******** Activités **********/
-h5 {
-    font-size: 22px;
-}
+
 
 .Activités-rubrique {
     margin-top: 20px;
@@ -318,9 +341,12 @@ h5 {
     width: 100%;
     height:380px;
 }
+h4 {
+    font-size: 22px;
+}
 .card-title2 {
     margin: 15px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 
@@ -367,6 +393,7 @@ h5 {
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+    margin-left: 0;
 }
 
 .populaires-cards .card-subtitle {
@@ -380,6 +407,10 @@ h5 {
     margin-bottom: 5px;
 }
 /************  Foot test  **********/
+h5{
+    font-size: 18px;
+    margin: 20px 0 20px 0;
+}
 .foot-container {
     display: flex;
     flex-direction: row;
@@ -465,20 +496,35 @@ h5 {
     .liennav{
         width: 100%;
     }
-    .nav1 {
-        border-top: none;
-        border-bottom-style: solid ;
+    .hover1 {
         margin-right: 0;
-        height: 36px;
+        padding-bottom: 40px;
+        border-top: none;
+        border-bottom: solid 2px;
+        border-color: var(--bordure-color);
+    }
+    .hover2 {
+        padding-bottom: 40px;
+        border-top: none;
+        border-bottom: solid 2px;
+        border-color: var(--bordure-color);
+    }
+    .liennav :hover{
+        border-bottom: solid 2px;
+        border-color: var(--main-color);
+    }
+    .nav1 {
+        border: none;
+        margin-right: 0;
+        padding-bottom: 21px;  
     }
     .nav2 {
-        width: 50%;
-        padding-top: 12px;
-        text-align: center;
-        height: 36px;
+        border: none;    
+        padding-bottom: 21px;
     }
+    
     h1  {
-       margin: 30px 20px 8px 20px; 
+       margin: 60px 20px 8px 20px; 
     }
     p   {
         margin: 10px 20px 0 20px; 
@@ -509,7 +555,7 @@ h5 {
         width: 100%;
     }
     
-    h3  {
+    h2  {
         margin: 0;
     }
     .filtres {
