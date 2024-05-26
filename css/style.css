@@ -103,13 +103,13 @@ a {
     border-color: white;
 
 }
-.hover1 :hover{
-    color: var(--main-color);
-    border-color: var(--main-color);
+.hover1:hover, .nav1:hover {
+    color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
 }
-.hover2 :hover{
-        color: var(--main-color);
-        border-color: var(--main-color);
+.hover2:hover, .nav2:hover {
+        color: var(--main-color) !important;
+        border-color: var(--main-color) !important;
 }
 .titre {
     width:120px;
@@ -507,10 +507,6 @@ h5{
         border-top: none;
         border-bottom: solid 2px;
         border-color: var(--bordure-color);
-    }
-    .liennav :hover{
-        border-bottom: solid 2px;
-        border-color: var(--main-color);
     }
     .nav1 {
         border: none !important;
