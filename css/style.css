@@ -522,13 +522,21 @@ h5{
     p   {
         margin: 10px 20px 0 20px; 
     }
+    .bob{
+        width: 80%;
+    }
+    .bub{
+        width: 100%;
+    }
     .barrerech {
         justify-content: center;
     }
     .search-term{
         border-color: transparent;
-        height: 46px;
-        width: 235px;
+        height: 48px;
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
     }
     .validation {
         display: none;
@@ -554,14 +562,16 @@ h5{
     }
     .filtres {
         gap: 10px;
-        justify-content: space-evenly ;
+        justify-content: center ;
         }
     .filtre {
         padding: 10px;
     } 
     .module {
-        width: 162.5px;
+        flex-wrap: wrap;
+        width: 46%;
         height: 50px;
+        font-size: 13px;
     }
     .info {
         gap: 10px;
